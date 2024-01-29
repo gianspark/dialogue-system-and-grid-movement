@@ -1,5 +1,5 @@
 # dialogue-system-and-grid-movement
-RPG dialogue system and movement
+dynamical RPG dialogue system and movement, made with godot using custom resources
 
 KEYBINDS: 
 
