@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Message" load_steps=2 format=3 uid="uid://dugb2brh58qkc"]
+
+[ext_resource type="Script" path="res://scripts/interactable_res/message.gd" id="1_wt8fd"]
+
+[resource]
+script = ExtResource("1_wt8fd")
+message = ". . . . ."
+author = "Mystery man"
+text_speed = 2.0
+options = Array[Resource("res://scripts/interactable_res/option.gd")]([])

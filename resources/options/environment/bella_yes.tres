@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Option" load_steps=2 format=3 uid="uid://f8fyvaaq66u7"]
+
+[ext_resource type="Script" path="res://scripts/interactable_res/option.gd" id="1_01thq"]
+
+[resource]
+script = ExtResource("1_01thq")
+option = "go left"
+option_number = 1

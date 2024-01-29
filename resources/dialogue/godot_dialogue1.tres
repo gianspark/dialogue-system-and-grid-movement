@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=3 format=3 uid="uid://vilf3jsmrw87"]
+
+[ext_resource type="Resource" uid="uid://bml58ebi80ian" path="res://resources/messages/environment/godot1.tres" id="1_5hntj"]
+[ext_resource type="Script" path="res://scripts/interactable_res/dialogue.gd" id="3_12bfk"]
+
+[resource]
+script = ExtResource("3_12bfk")
+id = 0
+id_to_next = 1
+messages = Array[Resource("res://scripts/interactable_res/message.gd")]([ExtResource("1_5hntj")])

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Conversation" load_steps=3 format=3 uid="uid://dhki4o4l8yh2j"]
+
+[ext_resource type="Script" path="res://scripts/interactable_res/conversation.gd" id="1_a33ds"]
+[ext_resource type="Resource" uid="uid://c3qqpwch64fd8" path="res://resources/dialogue/bucle_dialogue.tres" id="1_s85wv"]
+
+[resource]
+script = ExtResource("1_a33ds")
+dialogo = Array[Resource("res://scripts/interactable_res/dialogue.gd")]([ExtResource("1_s85wv")])

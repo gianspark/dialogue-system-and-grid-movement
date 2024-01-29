@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Conversation" load_steps=5 format=3 uid="uid://i50bif4hflrg"]
+
+[ext_resource type="Resource" uid="uid://c4gheixuoonfa" path="res://resources/dialogue/bella_dialogue0.tres" id="1_6pgah"]
+[ext_resource type="Script" path="res://scripts/interactable_res/conversation.gd" id="1_caxay"]
+[ext_resource type="Resource" uid="uid://db46kr7ag3foe" path="res://resources/dialogue/bella_dialogue1.tres" id="2_wb1n4"]
+[ext_resource type="Resource" uid="uid://c4lxyfi11vkjh" path="res://resources/dialogue/bella_dialogue2.tres" id="3_ktj6i"]
+
+[resource]
+script = ExtResource("1_caxay")
+dialogo = Array[Resource("res://scripts/interactable_res/dialogue.gd")]([ExtResource("1_6pgah"), ExtResource("2_wb1n4"), ExtResource("3_ktj6i")])

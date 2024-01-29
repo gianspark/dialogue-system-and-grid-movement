@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy0aaxxwt5tlj"]
+
+[ext_resource type="Script" path="res://scenes/textbox/textbox.gd" id="1_wmf80"]
+
+[node name="textbox" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wmf80")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 475.0
+offset_right = 940.0
+offset_bottom = 618.0
+color = Color(0.647059, 0.647059, 0.647059, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+layout_mode = 2
+offset_left = 10.0
+offset_top = 7.0
+offset_right = 315.0
+offset_bottom = 143.0
+theme_override_constants/separation = 12
+
+[node name="author" type="Label" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 21
+
+[node name="text" type="Label" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="typedSpeed" type="Timer" parent="."]
+
+[node name="qsy" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 0.797
+anchor_top = 0.174
+anchor_right = 0.797
+anchor_bottom = 0.174
+offset_left = -36.1201
+offset_top = 4.24799
+offset_right = -36.1201
+offset_bottom = 4.24799
+scale = Vector2(1.54547, 1.12117)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="qsy"]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 137.0
+offset_bottom = 315.0
+alignment = 2
+
+[connection signal="timeout" from="typedSpeed" to="." method="_on_typed_speed_timeout"]

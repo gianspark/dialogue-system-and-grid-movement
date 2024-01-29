@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="Conversation" load_steps=24 format=3 uid="uid://p6fgq44faxov"]
+
+[ext_resource type="Script" path="res://scripts/interactable_res/option.gd" id="1_8aqkx"]
+[ext_resource type="Script" path="res://scripts/interactable_res/conversation.gd" id="1_gaxng"]
+[ext_resource type="Script" path="res://scripts/interactable_res/message.gd" id="2_j7hk6"]
+[ext_resource type="Script" path="res://scripts/interactable_res/dialogue.gd" id="3_a1g84"]
+
+[sub_resource type="Resource" id="Resource_gj5e8"]
+script = ExtResource("1_8aqkx")
+option = "21"
+option_number = 20
+
+[sub_resource type="Resource" id="Resource_i2e3n"]
+script = ExtResource("1_8aqkx")
+option = "22"
+option_number = 1
+
+[sub_resource type="Resource" id="Resource_skwts"]
+script = ExtResource("1_8aqkx")
+option = "23"
+option_number = 20
+
+[sub_resource type="Resource" id="Resource_qn4hc"]
+script = ExtResource("2_j7hk6")
+message = "How old is gianspark?"
+author = "QUESTION 1"
+text_speed = 100.0
+options = Array[ExtResource("1_8aqkx")]([SubResource("Resource_gj5e8"), SubResource("Resource_i2e3n"), SubResource("Resource_skwts")])
+
+[sub_resource type="Resource" id="Resource_4dmor"]
+script = ExtResource("3_a1g84")
+id = 0
+id_to_next = -1
+messages = Array[ExtResource("2_j7hk6")]([SubResource("Resource_qn4hc")])
+
+[sub_resource type="Resource" id="Resource_y1agw"]
+script = ExtResource("1_8aqkx")
+option = "he never played"
+option_number = 20
+
+[sub_resource type="Resource" id="Resource_cncvo"]
+script = ExtResource("1_8aqkx")
+option = "1 time"
+option_number = 2
+
+[sub_resource type="Resource" id="Resource_drlw0"]
+script = ExtResource("1_8aqkx")
+option = "2 times"
+option_number = 20
+
+[sub_resource type="Resource" id="Resource_snm1y"]
+script = ExtResource("2_j7hk6")
+message = "How many times he play the Osu Mania World Cup?"
+author = "QUESTION 2"
+text_speed = 100.0
+options = Array[ExtResource("1_8aqkx")]([SubResource("Resource_y1agw"), SubResource("Resource_cncvo"), SubResource("Resource_drlw0")])
+
+[sub_resource type="Resource" id="Resource_w2in2"]
+script = ExtResource("3_a1g84")
+id = 1
+id_to_next = -1
+messages = Array[ExtResource("2_j7hk6")]([SubResource("Resource_snm1y")])
+
+[sub_resource type="Resource" id="Resource_ixa7t"]
+script = ExtResource("1_8aqkx")
+option = "2021"
+option_number = 3
+
+[sub_resource type="Resource" id="Resource_q8bk6"]
+script = ExtResource("1_8aqkx")
+option = "2022"
+option_number = 20
+
+[sub_resource type="Resource" id="Resource_5r2xi"]
+script = ExtResource("1_8aqkx")
+option = "2023"
+option_number = 20
+
+[sub_resource type="Resource" id="Resource_g6lux"]
+script = ExtResource("2_j7hk6")
+message = "Which year he start learning about code?"
+author = "PREGUNTA 3"
+text_speed = 100.0
+options = Array[ExtResource("1_8aqkx")]([SubResource("Resource_ixa7t"), SubResource("Resource_q8bk6"), SubResource("Resource_5r2xi")])
+
+[sub_resource type="Resource" id="Resource_ygr6l"]
+script = ExtResource("3_a1g84")
+id = 2
+id_to_next = -1
+messages = Array[ExtResource("2_j7hk6")]([SubResource("Resource_g6lux")])
+
+[sub_resource type="Resource" id="Resource_rh68h"]
+script = ExtResource("2_j7hk6")
+message = "good job thank you fer testing everything!!!"
+author = "FELICITACIONES :)"
+text_speed = 100.0
+options = Array[ExtResource("1_8aqkx")]([])
+
+[sub_resource type="Resource" id="Resource_70juj"]
+script = ExtResource("3_a1g84")
+id = 3
+id_to_next = -1
+messages = Array[ExtResource("2_j7hk6")]([SubResource("Resource_rh68h")])
+
+[sub_resource type="Resource" id="Resource_oh7x2"]
+script = ExtResource("2_j7hk6")
+message = "wrong answer :(
+start again"
+author = ""
+text_speed = 100.0
+options = Array[ExtResource("1_8aqkx")]([])
+
+[sub_resource type="Resource" id="Resource_1twc2"]
+script = ExtResource("3_a1g84")
+id = 20
+id_to_next = -1
+messages = Array[ExtResource("2_j7hk6")]([SubResource("Resource_oh7x2")])
+
+[resource]
+script = ExtResource("1_gaxng")
+dialogo = Array[ExtResource("3_a1g84")]([SubResource("Resource_4dmor"), SubResource("Resource_w2in2"), SubResource("Resource_ygr6l"), SubResource("Resource_70juj"), SubResource("Resource_1twc2")])

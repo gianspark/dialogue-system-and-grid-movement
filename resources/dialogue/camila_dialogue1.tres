@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=10 format=3 uid="uid://fjd3ptpo3f1s"]
+
+[ext_resource type="Resource" uid="uid://dqm3va46bva3b" path="res://resources/messages/environment/camila1.tres" id="1_hxk4u"]
+[ext_resource type="Script" path="res://scripts/interactable_res/dialogue.gd" id="1_kkgpo"]
+[ext_resource type="Resource" uid="uid://deecjs2aq1nhk" path="res://resources/messages/environment/camila2.tres" id="2_rmxcp"]
+[ext_resource type="Resource" uid="uid://0bialxdehs2e" path="res://resources/messages/environment/camila3.tres" id="3_g5u4j"]
+[ext_resource type="Resource" uid="uid://cqkk3rekbcht2" path="res://resources/messages/environment/camila4.tres" id="4_n6ith"]
+[ext_resource type="Resource" uid="uid://dugb2brh58qkc" path="res://resources/messages/environment/camila5.tres" id="5_mc8ve"]
+[ext_resource type="Resource" uid="uid://miedp018dn8u" path="res://resources/messages/environment/camila6.tres" id="6_wg20g"]
+[ext_resource type="Resource" uid="uid://c6xldxgb8ha3d" path="res://resources/messages/environment/camila7.tres" id="7_8pdl7"]
+[ext_resource type="Resource" uid="uid://7ancgtc22vf6" path="res://resources/messages/environment/camila8.tres" id="8_522j7"]
+
+[resource]
+script = ExtResource("1_kkgpo")
+id = 0
+id_to_next = -1
+messages = Array[Resource("res://scripts/interactable_res/message.gd")]([ExtResource("1_hxk4u"), ExtResource("2_rmxcp"), ExtResource("3_g5u4j"), ExtResource("4_n6ith"), ExtResource("5_mc8ve"), ExtResource("6_wg20g"), ExtResource("7_8pdl7"), ExtResource("8_522j7")])

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=3 format=3 uid="uid://c4gheixuoonfa"]
+
+[ext_resource type="Script" path="res://scripts/interactable_res/dialogue.gd" id="1_il2pi"]
+[ext_resource type="Resource" uid="uid://btftjovg80213" path="res://resources/messages/environment/bella1.tres" id="1_u5oci"]
+
+[resource]
+script = ExtResource("1_il2pi")
+id = 0
+id_to_next = -1
+messages = Array[Resource("res://scripts/interactable_res/message.gd")]([ExtResource("1_u5oci")])
