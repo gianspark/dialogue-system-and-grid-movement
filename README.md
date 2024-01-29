@@ -1,7 +1,10 @@
 # dialogue-system-and-grid-movement
 RPG dialogue system and movement
 
-KEYBINDS:
+KEYBINDS: 
+
 ARROWS TO MOVE
+
 SHIFT TO MOVE FASTER
+
 Z TO INTERACT
